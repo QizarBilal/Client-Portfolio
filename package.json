@@ -1,0 +1,19 @@
+{
+  "name": "zab-portfolio",
+  "version": "1.0.0",
+  "description": "Modern AI/ML Engineer Portfolio Website",
+  "main": "server/app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["portfolio", "react", "nodejs", "ai", "ml"],
+  "author": "Zabiha Muskan K",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
